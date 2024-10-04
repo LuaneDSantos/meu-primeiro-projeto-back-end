@@ -1,6 +1,8 @@
 const express = require("express")
 const router = express.Router()
 
+const conectaBancoDeDados = require('./bancodedados')
+conectaBancoDeDados()
 
 const app = express()
 const porta = 3333
